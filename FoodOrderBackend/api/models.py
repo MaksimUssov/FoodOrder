@@ -27,7 +27,6 @@ class Dish(models.Model):
     composition = models.TextField('Состав')
     cost = models.IntegerField('Цена', blank=False)
     section = models.ForeignKey(Section, on_delete=models.PROTECT)
-    # image = models.ImageField(upload_to='images/')
 
     def __str__(self):
         return f'{self.title} - {self.section}'
@@ -51,6 +50,7 @@ class DishesOfOrder(models.Model):
     dish_id = models.ForeignKey(Dish, on_delete=models.PROTECT)
     dish_title = models.CharField('Название блюда')
     worker_id = models.ForeignKey(Worker, on_delete=models.PROTECT)
+    date = models.DateField()
     def __str__(self):
         return f'{self.order_id.id} | {self.dish_id} | {self.order_id}'
 

@@ -75,6 +75,7 @@ const submitForm = async () => {
       dish_id: cart.value[index].id,
       dish_title: cart.value[index].title,
       worker_id: form.value.worker_id,
+      date: form.value.date
     });
   }
   cart.value = "";
@@ -266,6 +267,7 @@ function getRandomCart() {
               <tr>
                 <th scope="col">Заказ</th>
                 <th scope="col">Блюдо</th>
+                <th scope="col">Дата</th>
               </tr>
             </thead>
             <tbody>
@@ -276,11 +278,17 @@ function getRandomCart() {
                 <td v-if="order.worker_id == workerhistory">
                   {{ order.dish_title }}
                 </td>
+                <td v-if="order.worker_id == workerhistory">
+                  {{ order.date }}
+                </td>
                 <td v-if="workerhistory == 0">
                   {{ order.order_id }}
                 </td>
                 <td v-if="workerhistory == 0">
                   {{ order.dish_title }}
+                </td>
+                <td v-if="workerhistory == 0">
+                  {{ order.date }}
                 </td>
               </tr>
             </tbody>

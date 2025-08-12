@@ -1,6 +1,3 @@
-/* @import url(./reset.css); */
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
-
 .btn {
   min-width: 35px;
   min-height: 35px;
@@ -10,32 +7,22 @@
 
 .btn:hover {
   background-color: #527757;
-  border: none;
-}
-
-.btn:active {
-  background-color: #57835d;
-  border: none;
 }
 
 .row {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 body {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-
   color: #fff;
   background-color: #403c3b;
-
 }
 
 a {
   color: #fff;
   text-decoration: none;
 }
+
 .header__top {
   margin: 15px 0;
   display: flex;
@@ -79,7 +66,6 @@ a {
   height: 40px;
 }
 
-
 .navbar-menu {
   margin: 0 550px;
 }
@@ -96,14 +82,13 @@ a {
   list-style: none;
 }
 
-.main {
-  width: 100%;
-  height: auto;
+.navbar-menu__item a:hover {
+  border-bottom: 2px solid #72a479;
 }
 
 .menu__title {
   margin: 50px 0;
-  padding: 0 30px;
+  padding: 0 0 0 30px;
 
   font-weight: bold;
   font-size: 32px;
@@ -119,8 +104,7 @@ a {
 .card {
   background-color: #504b4a;
   color: #fff;
-  border-radius: 10px;
-  overflow: hidden;
+  border-radius: 1rem;
 }
 
 .card-body p {
@@ -129,7 +113,6 @@ a {
 
 .card-footer {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 
@@ -142,11 +125,11 @@ a {
 
 .cost::after {
   content: "р.";
-  margin-left: 5px;
+  margin-left: 3px;
 }
 
 .add-to-cart span {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 .footer {
@@ -156,5 +139,3 @@ a {
 
   background-color: #302d2c;
 }
-
-

@@ -3,11 +3,11 @@ from .models import *
 from .serializers import *
 
 
-class DishListCreateView(generics.ListCreateAPIView):  # GET + POST
+class DishListCreateView(generics.ListCreateAPIView):
     queryset = Dish.objects.all()
     serializer_class = DishSerializer
 
-class WorkerListCreateView(generics.ListCreateAPIView):  # GET + POST
+class WorkerListCreateView(generics.ListCreateAPIView):
     queryset = Worker.objects.all()
     serializer_class = WorkersSerializer
 
