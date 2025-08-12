@@ -1,0 +1,160 @@
+/* @import url(./reset.css); */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+.btn {
+  min-width: 35px;
+  min-height: 35px;
+  background-color: #72a479;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #527757;
+  border: none;
+}
+
+.btn:active {
+  background-color: #57835d;
+  border: none;
+}
+
+.row {
+    margin-top: 1rem;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  color: #fff;
+  background-color: #403c3b;
+
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+.header__top {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__btn-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.header__bottom {
+  padding: 10px 0 0 0;
+  background-color: #403c3b;
+  border-top: 1px solid #302d2c;
+  border-bottom: 2px solid #302d2c;
+}
+
+.header__logo {
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+
+.header__contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header__top .contact__icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 10px;
+
+  background-color: #72a479;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+
+.navbar-menu {
+  margin: 0 550px;
+}
+
+.navbar-menu__list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-menu__item {
+  list-style: none;
+}
+
+.main {
+  width: 100%;
+  height: auto;
+}
+
+.menu__title {
+  margin: 50px 0;
+  padding: 0 30px;
+
+  font-weight: bold;
+  font-size: 32px;
+
+  border-left: 5px solid #72a479;
+}
+
+.main__banner {
+  width: 100%;
+  overflow: hidden;
+}
+
+.card {
+  background-color: #504b4a;
+  color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-body p {
+  color: #b8b8b8;
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 10px 40px;
+}
+
+.cost {
+  font-size: 20px;
+}
+
+.cost::after {
+  content: "р.";
+  margin-left: 5px;
+}
+
+.add-to-cart span {
+    margin: 0 10px;
+}
+
+.footer {
+  margin-top: 75px;
+  padding: 15px;
+  text-align: center;
+
+  background-color: #302d2c;
+}
+
+
